@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: darkblue;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: black;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    color: lightblue;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 120px;
+    min-height: 60px;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: black;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 110px;
+    min-height: 60px;
+}
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown2:hover .dropdown-content2 {
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.text-block {
+    width: 45%;
+    margin: 20px;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    height: 30;
+    padding-bottom: 5%; 
+    position: relative;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#display-area {
+    width: 70%;
+    padding: 20px;
+    background-color: #fff;
+}
+
+#buttons {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+    color: #fff;
+}

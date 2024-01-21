@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raad het Getal</title>
+  <style>
+    /* Basisstijlen voor het centraal uitlijnen van de inhoud */
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hoofdtitel van de pagina -->
+  <h1>Raad het Getal</h1>
+  <!-- Instructie voor de gebruiker -->
+  <p>Probeer het geheime getal te raden tussen 1 en 10.</p>
+  <!-- Invoerveld voor de gok -->
+  <input type="number" id="guess" placeholder="Voer je gok in">
+  <!-- Knop om de gok te controleren -->
+  <button onclick="checkGuess()">Gokken</button>
+  <!-- Gebied voor berichten en feedback -->
+  <p id="message"></p>
+
+  <script src="game.js"></script>
+</body>
+</html>

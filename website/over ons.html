@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags voor tekenset en viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Koppel de externe stylesheet -->
+    <link rel="stylesheet" href="website.css">
+
+    <!-- Inline-stijlen -->
+    <style>
+
+    </style>
+
+    <!-- Titel van de website -->
+    <title>Je Website</title>
+
+    <!-- JavaScript-functie voor het tonen van inhoud -->
+    <script>
+        function showContent(section) {
+            // Zoek het element met de ID 'display-area'
+            var displayArea = document.getElementById('display-area');
+
+            // Schakel op basis van de meegegeven sectie
+            switch (section) {
+                case 'foto':
+                    // Toon een afbeelding
+                    displayArea.innerHTML = '<img src="downloaden.png" alt="Jouw Foto">';
+                    break;
+                case 'contact':
+                    // Toon contactinformatie
+                    displayArea.innerHTML = '<p>Contact Informatie: 9021703@student.zadkine.nl</p>';
+                    break;
+                case 'ervaring':
+                    // Toon werkervaring
+                    displayArea.innerHTML = '<p>Werkervaring: De enige werkervaring die ik heb is afwassen.</p>';
+                    break;
+                case 'opleiding':
+                    // Toon opleidingsinformatie
+                    displayArea.innerHTML = '<p>Opleiding: Ik doe software developer in Rotterdam.</p>';
+                    break;
+                case 'vaardigheden':
+                    // Toon vaardigheden
+                    displayArea.innerHTML = '<p>Programmeer Vaardigheden: Ik ben goed om met PHP te werken.</p>';
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Header van de website -->
+    <header>
+        <!-- Titel in de header -->
+        <h1>Speel voor het goede doel</h1>
+    </header>
+
+    <!-- Navigatiebalk -->
+    <nav>
+        <!-- Ongeordende lijst van navigatielinks -->
+        <ul>
+            <!-- Link naar de homepagina -->
+            <li><a href="home pagina.html">Home</a></li>
+
+            <!-- Dropdown met portfolio-items -->
+            <li class="dropdown">
+                <a href="#">Portofolio</a>
+                <!-- Dropdown-content met portfolio-links -->
+                <div class="dropdown-content">
+                    <a href="ons doel.html">Ons doel</a>
+                    <a href="waarom dit doel.html">Waarom dit doel</a>
+                    <a href="over ons.html">Over mij</a>
+                </div>
+            </li>
+
+            <!-- Tweede dropdown met game-items -->
+            <li class="dropdown2">
+                <a href="#">Onze game</a>
+                <!-- Dropdown-content met game-links -->
+                <div class="dropdown-content2">
+                    <a href="favo game.html">Favo game</a>
+                    <a href="uitleg game.html">Uitleg game</a>
+                    <a href="speel de game.html">Speel de game</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Hoofdsectie van de website -->
+    <section>
+        <!-- Div met knoppen -->
+        <div id="buttons">
+            <!-- Knoppen die de showContent-functie activeren -->
+            <button onclick="showContent('foto')">Foto</button>
+            <button onclick="showContent('contact')">Contact</button>
+            <button onclick="showContent('ervaring')">Ervaring</button>
+            <button onclick="showContent('opleiding')">Opleiding</button>
+            <button onclick="showContent('vaardigheden')">Vaardigheden</button>
+        </div>
+
+        <!-- Div voor het weergeven van inhoud -->
+        <div id="display-area">
+            <!-- Hier komt de inhoud van de knoppen -->
+            foto
+        </div>
+    </section>
+
+    <!-- Footer van de website -->
+    <footer>
+        <!-- Contactinformatie -->
+        <p>Contact: 9021703@student.zadkine.nl</p>
+        <!-- Copyright-informatie -->
+        <p>&copy; 2023 Je Website. Alle rechten voorbehouden.</p>
+    </footer>
+
+</body>
+
+</html>

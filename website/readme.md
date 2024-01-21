@@ -1,0 +1,1 @@
+In de game moet je een getal raden en er komt dan te tevoorschijn of je het hgoed hebt of niet. je hoeft het te besturen je moet gewoon een getal invullen.
